@@ -24,7 +24,13 @@ public class Main {
         studentList.add(rabbi);
 
         School ghs = new School(studentList, teacherList);
-            System.out.println("GHS has earned $"+ ghs.getTotalMoneyEarned());
+
+            tamasha.payFees(5000);
+            rakshith.payFees(6000);
+        System.out.println("GHS has earned $"+ ghs.getTotalMoneyEarned());
+
+        System.out.println("-------Making GHS PAY SALARY-------");
+
     }
 
     }
