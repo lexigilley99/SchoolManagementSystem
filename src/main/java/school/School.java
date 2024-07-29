@@ -26,31 +26,32 @@ public class School {
         return teachers;
     }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
     }
 
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
     public int getTotalMoneyEarned() {
         return totalMoneyEarned;
     }
 
-    public void setTotalMoneyEarned(int totalMoneyEarned) {
-        this.totalMoneyEarned = totalMoneyEarned;
+    public void updateTotalMoneyEarned(int MoneyEarned) {
+        this.totalMoneyEarned += MoneyEarned;
     }
 
     public int getTotalMoneySpent() {
         return totalMoneySpent;
     }
 
-    public void setTotalMoneySpent(int totalMoneySpent) {
-        this.totalMoneySpent = totalMoneySpent;
+    public void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned-=moneySpent;
     }
+
 }
